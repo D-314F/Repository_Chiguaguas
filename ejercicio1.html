@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio No. 1</title>
+</head>
+<body>
+   
+        <h2>Total de tres productos</h2>
+        <input id="a" type="number" >
+        <input id="b" type="number" >
+        <input id="c" type="number" >
+        <button onclick="sumar()">Sumar</button>
+        <div id="r">Total: </div>
+        <script>
+        // Esta función suma los valores de los tres campos y muestra el resultado
+        function sumar() {
+            var a = Number(document.getElementById('a').value);
+            var b = Number(document.getElementById('b').value);
+            var c = Number(document.getElementById('c').value);
+            var total = a + b + c;
+            document.getElementById('r').textContent = 'Total: ' + total;
+        }
+        </script>
+</body>
+</html>
