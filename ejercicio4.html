@@ -6,6 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    trabajo de andrey 
+    <h1>calculadora de divicion entera</h1>
+    <script>
+        let n = parseInt(prompt("introduce el numero N (dividendo):"));
+        let m = parseInt(prompt("introduce el numero de M (divisor):"));
+
+        if (m ===0){
+            alert("error: no se puede dividir por cero.");
+        } else {
+            let resultadoDivision = n / m;
+            document.write("el resultado de la divicion de " + n +"entre" + m +"es:" +resultadoDivision);
+        }
+    </script>
 </body>
 </html>
