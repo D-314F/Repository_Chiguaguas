@@ -1,32 +1,17 @@
-este ejercicio es de james
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Resto de la división entera</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>División</title>
 </head>
 <body>
-    <h2>Calcular el resto de la división entera</h2>
-    <label for="numN">Número N:</label>
-    <input type="number" id="numN" />
-    <br>
-    <label for="numM">Número M:</label>
-    <input type="number" id="numM" />
-    <br>
-    <button onclick="calcularResto()">Calcular resto</button>
-    <p id="resultado"></p>
-
     <script>
-        function calcularResto() {
-            var N = parseInt(document.getElementById('numN').value);
-            var M = parseInt(document.getElementById('numM').value);
-            if (isNaN(N) || isNaN(M) || M === 0) {
-                document.getElementById('resultado').innerText = 'Por favor ingrese números válidos y M distinto de cero.';
-                return;
-            }
-            var resto = N % M;
-            document.getElementById('resultado').innerText = 'El resto de la división de ' + N + ' entre ' + M + ' es: ' + resto;
-        }
+        let dividiendoM=10;
+        let divisorN=3;
+        let resto = dividiendoM % divisorN;
+        console.log(resto);
+        document.write("El resto de la división es: " + resto + "<br>");
     </script>
 </body>
 </html>
